@@ -1,11 +1,12 @@
 import apis
 import logs
+from os import getenv
 
 SERVICE_CATEGORY = "2c9c486e4f821a19014f82381feb0001"  # This is the category ID for "Sports Reservation". It usually doesn't change.
 
 # Fill in these data
-USER_ID = "YOUR_USER_ID"
-USER_PASSWORD = "YOUR_USER_PASSWORD"
+USER_ID = getenv("STD_ID")
+USER_PASSWORD = getenv("STD_PW")
 CAMPUS_NAME = "邯郸校区"
 SPORT_NAME = "羽毛球"
 SPORT_LOCATION = "正大体育馆羽毛球(标场)"

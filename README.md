@@ -8,5 +8,11 @@ DISCLAIMER: Use at your own risk. The author is, to the extent permitted by law,
 
 You may set the log level in `logs.py`
 
+### password update
+- In case your id and pw is revealed.
+- Use `os.getenv()` to obtain environment dict (keys "STD_ID" and "STD_PW")
+- Remember to add these two items to the repo secrets.
+
+
 ## Known issues
 - The script may on rare occasions fail to login. But this happens on browser too so there's nothing I can do about it. Wait and try again later.
